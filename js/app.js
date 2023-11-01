@@ -61,13 +61,13 @@ const shopLocations = [
 function createHeaderRow() {
   const salesTable = document.getElementById('sales-table');
   const headerRow = document.createElement('tr');
-  headerRow.innerHTML = `<th>Location</th>`;
+  headerRow.innerHTML = `<th>Locations</th>`;
 
   for (const hour of storeHours) {
     headerRow.innerHTML += `<th>${hour}</th>`;
   }
 
-  headerRow.innerHTML += `<th>Daily Location Total</th>`;
+  headerRow.innerHTML += `<th>Daily Location Totals</th>`;
   salesTable.querySelector('thead').appendChild(headerRow);
 }
 
@@ -75,7 +75,7 @@ function createHeaderRow() {
 function createFooterRow() {
   const salesTable = document.getElementById('sales-table');
   const footerRow = document.createElement('tr');
-  footerRow.innerHTML = `<th>Total</th>`;
+  footerRow.innerHTML = `<th>Hourly Total for All Locations</th>`;
 
   let grandTotal = 0;
 

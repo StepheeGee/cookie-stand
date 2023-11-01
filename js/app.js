@@ -1,6 +1,5 @@
 'use strict';
 
-
 class Location {
   constructor(name, minCustomers, maxCustomers, avgCookiesPerCustomer, hours) {
     this.name = name;
@@ -81,8 +80,13 @@ function createFooterRow() {
 
   for (const hour of storeHours) {
     let hourlyTotal = 0;
-    for (const location of shopLocations) {
-      hourlyTotal += location.cookiesSoldPerHour.find(data => data.hour === hour).cookiesSold;
+    for (let i = 0; i < shopLocations.length; i++) {
+      for (let j = 0; j < shopLocations[i].cookiesSoldPerHour.length; j++) {
+        if (shopLocations[i].cookiesSoldPerHour[j].hour === hour) {
+          hourlyTotal += shopLocations[i].cookiesSoldPerHour[j].cookiesSold;
+          break; // Stop
+        }
+      }
     }
     grandTotal += hourlyTotal;
     footerRow.innerHTML += `<td>${hourlyTotal}</td>`;
@@ -104,6 +108,7 @@ for (let i = 0; i < shopLocations.length; i++) {
 
 // Create footer row
 createFooterRow();
+
 
 
 

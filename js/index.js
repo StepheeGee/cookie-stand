@@ -1,12 +1,33 @@
 'use strict';
 
-
 class Location {
   constructor(name, hoursOpen, contactInfo, address) {
     this.name = name;
     this.hoursOpen = hoursOpen;
     this.contactInfo = contactInfo;
     this.address = address;
+  }
+
+  render() {
+    const container = document.getElementById('store-info');
+    const div = document.createElement('div');
+    div.textContent = `Location: ${this.name}`;
+    container.appendChild(div);
+
+    const ul = document.createElement('ul');
+    const hoursOpenLi = document.createElement('li');
+    hoursOpenLi.textContent = `Hours Open: ${this.hoursOpen}`;
+    ul.appendChild(hoursOpenLi);
+
+    const contactInfoLi = document.createElement('li');
+    contactInfoLi.textContent = `Contact Info: ${this.contactInfo}`;
+    ul.appendChild(contactInfoLi);
+
+    const addressLi = document.createElement('li');
+    addressLi.textContent = `Location: ${this.address}`;
+    ul.appendChild(addressLi);
+
+    div.appendChild(ul);
   }
 }
 
@@ -43,10 +64,6 @@ const storeInfo = [
   ),
 ];
 
-const ulElement = document.getElementById('store-info');
-
-for (let i = 0; i < storeInfo.length; i++) {
-  const li = document.createElement('li');
-  li.textContent = `${storeInfo[i].name}, Hours Open: ${storeInfo[i].hoursOpen}, Contact Info: ${storeInfo[i].contactInfo}, Location: ${storeInfo[i].address}`;
-  ulElement.appendChild(li);
-}
+storeInfo.forEach(location => {
+  location.render();
+});

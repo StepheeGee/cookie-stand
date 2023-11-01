@@ -57,6 +57,10 @@ nav ul li a:hover {
   margin: 60px auto;
 }
 
+#store-info{
+  list-style-type: none;
+}
+
 footer{
   background-color: #ccc;
   padding: 1em;

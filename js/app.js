@@ -1,6 +1,6 @@
 'use strict';
 
-class Location {
+class Location {  //used class based approach instead of prototyping
   constructor(name, minCustomers, maxCustomers, avgCookiesPerCustomer, hours) {
     this.name = name;
     this.minCustomers = minCustomers;

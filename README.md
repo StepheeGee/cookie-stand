@@ -2,7 +2,7 @@
 
 ## Salmon Cookies
 
-I really don't know what I'm doing here. But I know what I'm trying to do. I'm trying to create JS Object literals for each shop location that Pat owns. I assigned properties to each object. And then I organized and structured the data for each location. Then, I used the objects to calculate and render sales data (in the sales.html document) by using two functions, respectively, caculateSales and renderSales. 
+I've created a dynamic webpage for Pat's cookies. A large component of this assignment required me to write JS code to establish a class to model store locations, generates sales data for each location, dynamically builds an HTML table with the specified header and footer, and populates the table with the sales data rows for each store.
 
 ### Author: Stephanie G Johnson
 
@@ -12,6 +12,7 @@ I really don't know what I'm doing here. But I know what I'm trying to do. I'm t
 
 [Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects)
 
+[HTML table w/ JS and DOM Interface](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces#creating_an_html_table_dynamically)
 
 [submission PR](https://stepheegee.github.io/cookie-stand/)
 
@@ -23,8 +24,13 @@ I really don't know what I'm doing here. But I know what I'm trying to do. I'm t
 
 ### Reflections and Comments
 
-What just happened over the weekend? I felt like I was keeping up with the instruction until today. Today threw me for a loop. I'm having the most difficulty with having multiple html documents that rely on one javascript document. I finally decided to comment out the script tag on my index.html file, until I can figure out how to synchronize everything.
+How did this go, overall?
 
-Today was really challenging. And not in an inspiring way. In a way that felt like mental gymnastics torture. 
+Today went a lot better. I was able to track the demo and refactor my code from yesterday. I created a constructor for the Location class. And used that to initialize the properties of each location for Pat's cookie-stand. And I was able to create the dynamic, data driven table that displays hour and total sales for all store locations. I still need to work on the CSS and arrange and style everything properly.  
 
-I'm frustrated with myself because I created all these objects and properties, but I did not use any methods. Instead, I used functions to perform the calculations that I needed. And I think I need to go back tomorrow and refactor my code to create objects with methods and then define the functions within the method. I think that's where I messed up. But I can't even think straight anymore this Monday evening.  
+What observations or questions do you have about what you’ve learned so far?
+I still feel a little shaky on the DOM steps to manipulate a webpage. But I've narrowed the steps down to Get, Create, Append. So I used the acronym GCA (kind of how we use ACP) to figure out what my next steps would be. 
+
+When I used ChatGPT for help, I noticed that it was using the .foreach loop, rather than the for loop. I don't know what a .foreach loop is. I asked ChatGPT, but I feel like they don't know either. It's probably requires high level JS clearance to know. But I do understand that it is similar to the for loop, but more concise. I decided against using it because I didn't understand the functionality.
+
+How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment? Today took me about 4.5 hours. And I should've worked a little longer, but I'm tired and I still have other assignments to submit.

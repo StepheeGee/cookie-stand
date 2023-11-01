@@ -90,7 +90,7 @@ function createFooterRow() {
     }
     grandTotal += hourlyTotal;
     footerRow.innerHTML += `<td>${hourlyTotal}</td>`;
-  }
+  } //+= appends content to the footer row without overriding the existing content
 
   footerRow.innerHTML += `<td>${grandTotal}</td>`;
   salesTable.querySelector('tfoot').appendChild(footerRow);

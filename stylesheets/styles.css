@@ -67,3 +67,40 @@ footer{
   text-align: center;
 }
 
+/* Apply the styles to the table */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+/* Style for the table header (Locations, Hours, Hourly Totals) */
+thead th {
+  background-color: gray;
+  color: white;
+}
+
+/* Style for table data cells (sales data) */
+tbody td {
+  background-color: salmon;
+}
+
+/* Style for the first data cell (Locations) to be left-aligned */
+tbody td:first-child {
+  text-align: left;
+}
+
+/* Style for the last data cell (Hourly Totals) */
+tfoot th {
+  background-color: gray;
+  color: white;
+}
+
+/* Footer styling */
+footer {
+  background-color: gray;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

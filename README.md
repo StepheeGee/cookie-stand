@@ -13,7 +13,7 @@ I really don't know what I'm doing here. But I know what I'm trying to do. I'm t
 [Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects)
 
 
-[submission PR](http://xyz.com)
+[submission PR](https://stepheegee.github.io/cookie-stand/)
 
 
 ### Lighthouse Accessibility Report Score

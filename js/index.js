@@ -73,6 +73,6 @@ const storeInfo = [
   ),
 ];
 
-storeInfo.forEach(location => {
+storeInfo.forEach(function (location) {
   location.render();
 });

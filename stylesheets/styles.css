@@ -29,6 +29,7 @@ header h1 {
 
 nav {
   background-color: #FF5733; /* Salmon background */
+  text-align: left;
 }
 
 body {
@@ -55,3 +56,14 @@ nav ul li a:hover {
   display: block;
   margin: 60px auto;
 }
+
+#store-info{
+  list-style-type: none;
+}
+
+footer{
+  background-color: #ccc;
+  padding: 1em;
+  text-align: center;
+}
+

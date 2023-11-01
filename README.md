@@ -18,7 +18,7 @@ I've created a dynamic webpage for Pat's cookies. A large component of this assi
 
 
 ### Lighthouse Accessibility Report Score
-![Lighthouse](photos/lighthouse.png)
+![Lighthouse](photos/lighthouse07.png)
 
 
 

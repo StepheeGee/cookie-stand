@@ -16,6 +16,8 @@ I've created a dynamic webpage for Pat's cookies. A large component of this assi
 
 [HTML table w/ JS and DOM Interface](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Traversing_an_HTML_table_with_JavaScript_and_DOM_Interfaces#creating_an_html_table_dynamically)
 
+[Carousel](https://css-tricks.com/css-only-carousel/)
+
 [submission PR](https://stepheegee.github.io/cookie-stand/)
 
 
@@ -33,4 +35,4 @@ Today I made a lot of stylistic changes. I also made sure that my JS code was fu
 What observations or questions do you have about what you’ve learned so far?
 I didn't know that JS was also responsible in large part for animations. That was new for me. I'm interested in learning what type of animations can be created on a webpage to make it interactive.
 
-How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment? It took me over three hours. But I also started late because I was working on another assignment. I thought it would take me longer to do this. And it probably should've. But now it's late. 
+How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment? It took me over three hours. But I also started late because I was working on another assignment. I thought it would take me longer to do this. And it probably should've. But now it's late at night. 

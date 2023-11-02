@@ -1,5 +1,19 @@
 'use strict';
 
+const images = ["photos/salmon.png", "photos/shirt.jpg", "photos/family.jpg"];
+const slideshow = document.querySelector(".slideshow");
+
+let currentIndex = 0;
+
+function rotateImages() {
+  currentIndex = (currentIndex + 1) % images.length;
+  const translateXValue = `translateX(-${currentIndex * 100}%)`;
+  slideshow.style.transform = translateXValue;
+}
+
+setInterval(rotateImages, 5000);
+
+
 class Location {
   constructor(name, hoursOpen, contactInfo, address) {
     this.name = name;
@@ -11,25 +25,34 @@ class Location {
   render() {
     const container = document.getElementById('store-info');
     const div = document.createElement('div');
-    div.textContent = `Location: ${this.name}`;
-    container.appendChild(div);
+
+    // Apply the "righteous-font" class to the name element
+    const nameElement = document.createElement('p');
+    nameElement.textContent = this.name;
+    nameElement.classList.add('righteous-font'); // Add the CSS class
+    div.appendChild(nameElement);
 
     const ul = document.createElement('ul');
     const hoursOpenLi = document.createElement('li');
     hoursOpenLi.textContent = `Hours Open: ${this.hoursOpen}`;
+    hoursOpenLi.classList.add('sub-content');
     ul.appendChild(hoursOpenLi);
 
     const contactInfoLi = document.createElement('li');
     contactInfoLi.textContent = `Contact Info: ${this.contactInfo}`;
+    contactInfoLi.classList.add('sub-content');
     ul.appendChild(contactInfoLi);
 
     const addressLi = document.createElement('li');
     addressLi.textContent = `Location: ${this.address}`;
+    addressLi.classList.add('sub-content');
     ul.appendChild(addressLi);
 
     div.appendChild(ul);
+    container.appendChild(div);
   }
 }
+  
 
 const storeInfo = [
   new Location(
@@ -64,6 +87,6 @@ const storeInfo = [
   ),
 ];
 
-storeInfo.forEach(location => {
+storeInfo.forEach(function (location) {
   location.render();
 });

@@ -1,41 +1,49 @@
+/* Reset and Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .location {
   font-family: 'Righteous', sans-serif;
   color: #000000;
-  margin: 10px 10px; 
+  margin: 10px 10px;
 }
 
 body {
-  font-family: 'Arial', sans-serif; /* Specify a fallback font */
+  font-family: 'Arial', sans-serif;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 p {
-  font-family: 'Georgia', serif; /* Specify a fallback font */
+  font-family: 'Georgia', serif;
 }
 
 /* Background Colors */
 header {
-  background-color: black; 
+  background-color: black;
   color: salmon;
   text-align: center;
 }
 
-
 header h1 {
-  font-size: 50px; 
+  font-size: 55px;
   font-family: 'Righteous', sans-serif;
   padding: 35px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 nav {
-  background-color: #FF5733; /* Salmon background */
+  background-color: salmon;
   text-align: left;
+  padding: 7px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
-body {
-  background-color: #FFF; /* White background */
-}
-
 
 nav ul li {
   display: inline;
@@ -44,46 +52,105 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #000; /* Black text color for links */
+  color: #000000;
   font-weight: normal;
+  padding: 10px 20px;
+  background-color: transparent;
+  transition: background-color 0.35s, color 0.35s;
+  border: none; 
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
+nav ul li a:hover, nav ul li a:active {
+  background-color: #0071C5; 
+  color: white; 
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.salmon-photo {
-  display: block;
-  margin: 60px auto;
+
+.hero-container {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), #0071C5, #0097FF, rgba(0, 0, 0, 0));
+  padding: 15px 0; 
 }
 
-#store-info{
+
+.slideshow {
+  display: flex;
+  overflow: hidden;
+  animation: rotateImages 50s linear infinite;
+  width: 300%;
+  height: 250px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), #0071C5, #0097FF, rgba(0, 0, 0, 0));
+}
+
+.slideshow img {
+  width: 375px;
+  margin-right: 120px;
+  max-height: 100%; 
+}
+
+
+
+@keyframes rotateImages {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-100%);
+  }
+  75% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+.lower-border {
+  border-bottom: 1px solid gray;
+}
+
+#store-info {
   list-style-type: none;
 }
 
-footer{
-  background-color: #ccc;
-  padding: 1em;
-  text-align: center;
-}
-
-/* Apply the styles to the table */
 table {
   border-collapse: collapse;
   width: 100%;
   font-family: 'Arial', sans-serif;
   text-align: center;
+  border: 1px solid black;
 }
 
 /* Style for the table header (Locations, Hours, Hourly Totals) */
 thead th {
   background-color: gray;
   color: white;
+  border: 1px solid black;
+  padding: 10px;
 }
 
 /* Style for table data cells (sales data) */
 tbody td {
   background-color: salmon;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+tfoot td {
+  background-color: gray;
+  border: 1px solid black;
+  color: white;
 }
 
 /* Style for the first data cell (Locations) to be left-aligned */
@@ -91,10 +158,30 @@ tbody td:first-child {
   text-align: left;
 }
 
+tbody td:last-child {
+  background-color: gray;
+  color: white;
+}
+
 /* Style for the last data cell (Hourly Totals) */
 tfoot th {
   background-color: gray;
   color: white;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+/* homepage location name font */
+.righteous-font {
+  font-family: 'Righteous', sans-serif;
+  font-size: 25px;
+  margin: 25px 0px 10px 20px;
+}
+
+.sub-content {
+  color: gray;
+  margin-left: 35px;
+  padding-bottom: 10px;
 }
 
 /* Footer styling */
@@ -103,4 +190,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
+  margin-top: auto; 
+  width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
 }

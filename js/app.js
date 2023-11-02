@@ -66,7 +66,7 @@ function createHeaderRow() {
     headerRow.innerHTML += `<th>${hour}</th>`;
   }
 
-  headerRow.innerHTML += `<th>Daily Location Totals</th>`;
+  headerRow.innerHTML += `<th>Location Totals</th>`;
   salesTable.querySelector('thead').appendChild(headerRow);
 }
 

@@ -1,17 +1,14 @@
 'use strict';
 
-const images = ["photos/salmon.png", "photos/shirt.jpg", "photos/family.jpg"];
 const slideshow = document.querySelector(".slideshow");
 
-let currentIndex = 0;
-
 function rotateImages() {
-  currentIndex = (currentIndex + 1) % images.length;
-  const translateXValue = `translateX(-${currentIndex * 100}%)`;
-  slideshow.style.transform = translateXValue;
+  const firstImage = slideshow.firstElementChild;
+  slideshow.removeChild(firstImage);
+  slideshow.appendChild(firstImage);
 }
 
-setInterval(rotateImages, 5000);
+setInterval(rotateImages, 1000);
 
 
 class Location {

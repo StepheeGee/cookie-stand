@@ -21,12 +21,47 @@
     </nav>
   </header>
 
+
+<div class="form-container">
+<form id="location-form">
+  <div class="input-row">
+    <div class="input-group">
+      <label for="name">Location Name</label>
+      <input type="text" id="name" placeholder="Enter Name">
+    </div>
+    <div class="input-group">
+      <label for="min-customers">Min Customers Per Hour</label>
+      <input type="number" id="min-customers" placeholder="Enter Minimum">
+    </div>
+  </div>
+  <div class="input-row">
+    <div class="input-group">
+      <label for="max-customers">Max Customers Per Hour</label>
+      <input type="number" id="max-customers" placeholder="Enter Maximum">
+    </div>
+    <div class="input-group">
+      <label for="avg-cookies">Avg Cookies Per Sale</label>
+      <input type="number" id="avg-cookies" placeholder="Enter Avg Cookies">
+    </div>
+  </div>
+  <button type="button" onclick="addLocation()">Add Location</button>
+</form>
+
+</div>
+
+  
+  
+  
+  
+  
 <main>
-  <table id="sales-table">
-      <thead></thead>
-      <tbody></tbody>
-      <tfoot></tfoot>
-  </table>
+  <div class="table-container">
+    <table id="sales-table">
+        <thead></thead>
+        <tbody></tbody>
+        <tfoot></tfoot>
+    </table>
+  </div>
 </main>
 
 

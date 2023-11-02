@@ -61,12 +61,13 @@ nav ul li a {
 }
 
 nav ul li a:hover, nav ul li a:active {
-  background-color: #0071C5; 
+  background-color: #3280b4; 
   color: white; 
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Rotating slide show*/
 
 .hero-container {
   position: relative;
@@ -84,7 +85,6 @@ nav ul li a:hover, nav ul li a:active {
   height: 250px;
   margin-top: 40px;
   margin-bottom: 40px;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0), #0071C5, #0097FF, rgba(0, 0, 0, 0));
 }
 
 .slideshow img {
@@ -129,7 +129,6 @@ table {
   width: 100%;
   font-family: 'Arial', sans-serif;
   text-align: center;
-  border: 1px solid black;
 }
 
 /* Style for the table header (Locations, Hours, Hourly Totals) */
@@ -167,8 +166,8 @@ tbody td:last-child {
 /* Style for the last data cell (Hourly Totals) */
 tfoot th {
   background-color: gray;
-  color: white;
   border: none;
+  color: white;
   padding: 10px;
 }
 
@@ -194,4 +193,74 @@ footer {
   margin-top: auto; 
   width: 100%;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* form styling */
+
+
+.input-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+}
+
+label {
+  padding: 5px;
+  font-size: 12px;
+  text-align: left; 
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 10px; 
+}
+
+#location-form {
+  border: 2px solid #8fa6b6;
+  padding: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  position: relative;
+}
+
+#location-form::before {
+  content: "Add a New Store to the Table!";
+  font-family: 'Righteous', sans-serif;
+  font-size: 14px;
+  color: salmon;
+  position: absolute;
+  top: -25px; 
+  left: 5px; 
+}
+
+button {
+  background-color: rgb(80, 77, 91);
+  color: white;
+  height: 30px;
+  width: 100px;
+  margin-left: 7px;
+  cursor: pointer;
+  transition: background-color 0.35s, color 0.35s;
+  font-family: sans-serif;
+}
+
+button:hover, button:active {
+  background-color: #3280b4;
+  color: white;
+}
+
+.table-container {
+  margin: 0px 60px 30px 60px; 
 }

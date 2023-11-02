@@ -32,16 +32,17 @@ header {
 }
 
 header h1 {
-  font-size: 50px;
+  font-size: 55px;
   font-family: 'Righteous', sans-serif;
   padding: 35px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 nav {
-  background-color: salmon; /* Salmon background */
+  background-color: salmon;
   text-align: left;
   padding: 7px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 nav ul li {
@@ -63,18 +64,22 @@ nav ul li a:hover, nav ul li a:active {
   background-color: #0071C5; 
   color: white; 
   cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 
 .hero-container {
   position: relative;
   overflow: hidden;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), #0071C5, #0097FF, rgba(0, 0, 0, 0));
+  padding: 15px 0; 
 }
+
 
 .slideshow {
   display: flex;
   overflow: hidden;
-  animation: rotateImages 45s linear infinite;
+  animation: rotateImages 50s linear infinite;
   width: 300%;
   height: 250px;
   margin-top: 40px;
@@ -84,7 +89,7 @@ nav ul li a:hover, nav ul li a:active {
 
 .slideshow img {
   width: 375px;
-  margin-right: 150px;
+  margin-right: 120px;
   max-height: 100%; 
 }
 
@@ -185,6 +190,7 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
-  margin-top: auto; /* Push the footer to the bottom */
+  margin-top: auto; 
   width: 100%;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
 }

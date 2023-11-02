@@ -1,8 +1,10 @@
-# LAB - Class-06
+# LAB - Class-08b
+
+11.1.23
 
 ## Salmon Cookies
 
-I've created a dynamic webpage for Pat's cookies. A large component of this assignment required me to write JS code to establish a class to model store locations, generates sales data for each location, dynamically builds an HTML table with the specified header and footer, and populates the table with the sales data rows for each store.
+I've created a dynamic webpage for Pat's cookies. A large component of this assignment required me to write JS code to establish a class to model store locations, generates sales data for each location, dynamically builds an HTML table with the specified header and footer, and populates the table with the sales data rows for each store. And now it features a revolving photo carousel.
 
 ### Author: Stephanie G Johnson
 
@@ -18,7 +20,7 @@ I've created a dynamic webpage for Pat's cookies. A large component of this assi
 
 
 ### Lighthouse Accessibility Report Score
-![Lighthouse](photos/lighthouse07.png)
+![Lighthouse](photos/lighthouse08.png)
 
 
 
@@ -26,11 +28,9 @@ I've created a dynamic webpage for Pat's cookies. A large component of this assi
 
 How did this go, overall?
 
-Today went a lot better. I was able to track the demo and refactor my code from yesterday. I created a constructor for the Location class. And used that to initialize the properties of each location for Pat's cookie-stand. And I was able to create the dynamic, data driven table that displays hour and total sales for all store locations. I still need to work on the CSS and arrange and style everything properly.  
+Today I made a lot of stylistic changes. I also made sure that my JS code was functional and accurate. I did not manage my time well between assignments today, so I feel like I'm rushing. I've worked on this for about 3 hours and there's more that I want to do, but it will have to wait.   
 
 What observations or questions do you have about what you’ve learned so far?
-I still feel a little shaky on the DOM steps to manipulate a webpage. But I've narrowed the steps down to Get, Create, Append. So I used the acronym GCA (kind of how we use ACP) to figure out what my next steps would be. 
+I didn't know that JS was also responsible in large part for animations. That was new for me. I'm interested in learning what type of animations can be created on a webpage to make it interactive.
 
-When I used ChatGPT for help, I noticed that it was using the .foreach loop, rather than the for loop. I don't know what a .foreach loop is. I asked ChatGPT, but I feel like they don't know either. It's probably requires high level JS clearance to know. But I do understand that it is similar to the for loop, but more concise. I decided against using it because I didn't understand the functionality.
-
-How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment? Today took me about 4.5 hours. And I should've worked a little longer, but I'm tired and I still have other assignments to submit.
+How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment? It took me over three hours. But I also started late because I was working on another assignment. I thought it would take me longer to do this. And it probably should've. But now it's late. 

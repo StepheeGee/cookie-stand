@@ -10,6 +10,10 @@ I've created a dynamic webpage for Pat's cookies. A large component of this assi
 
 ### Links and Resources
 
+[Event Listeners](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
+
+[DOMContentLoaded event](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event)
+
 [SOLID](https://www.geeksforgeeks.org/single-responsibility-in-solid-design-principle/)
 
 [Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects)
@@ -22,17 +26,27 @@ I've created a dynamic webpage for Pat's cookies. A large component of this assi
 
 
 ### Lighthouse Accessibility Report Score
-![Lighthouse](photos/lighthouse08.png)
+![Lighthouse](photos/lighthouse09.png)
 
 
 
-### Reflections and Comments
+### Comments
 
-How did this go, overall?
+* Created an HTML form to accept the information for a new cookie stand location. Used event handler to append the input information to the table.
 
-Today I made a lot of stylistic changes. I also made sure that my JS code was functional and accurate. I did not manage my time well between assignments today, so I feel like I'm rushing. I've worked on this for about 3 hours and there's more that I want to do, but it will have to wait.   
+* My constructor function was Location with properties that I included in the form. And I made the function of the form - addLocation. 
 
-What observations or questions do you have about what you’ve learned so far?
-I didn't know that JS was also responsible in large part for animations. That was new for me. I'm interested in learning what type of animations can be created on a webpage to make it interactive.
+* I checked to make sure that made code was following the SRR. I think so. I have the following functions: 
+    * Location Constructor - to complete sales calculations
+    * Location Constructor - to append store info to homepage.(That was a total disaster, in hindsight. I had to create two separate JS files, one fore the homepage and one for the sales data page. I thought that was a good idea until I went back to consolidate the files, and realized it was almost impossible because I gave two different constructors the same name. So I won't do that again.)
+    * Table Functions - One for the Header Row and one for the Footer Row
+    * Used the Footer Row function to evaluate the grand total for the table. 
+    * Function for my Rotating Images. (Another disaster. But at least this one was fun.)
+    * Constructor Function - addLocation for the form to add a location to the table. 
 
-How long did it take you to complete this assignment? And, before you started, how long did you think it would take you to complete this assignment? It took me over three hours. But I also started late because I was working on another assignment. I thought it would take me longer to do this. And it probably should've. But now it's late at night. 
+
+* Included `</fieldset>` and `</legend>` in my html form structure to improve accessibility. (And legend in my css) 
+
+* Swapped out my onclick method for an event listener. 
+
+

@@ -1,17 +1,14 @@
 'use strict';
 
-const images = ["photos/salmon.png", "photos/shirt.jpg", "photos/family.jpg"];
 const slideshow = document.querySelector(".slideshow");
 
-let currentIndex = 0;
-
 function rotateImages() {
-  currentIndex = (currentIndex + 1) % images.length;
-  const translateXValue = `translateX(-${currentIndex * 100}%)`;
-  slideshow.style.transform = translateXValue;
+  const firstImage = slideshow.firstElementChild;
+  slideshow.removeChild(firstImage);
+  slideshow.appendChild(firstImage);
 }
 
-setInterval(rotateImages, 5000);
+setInterval(rotateImages, 1000);
 
 
 class Location {
@@ -26,10 +23,10 @@ class Location {
     const container = document.getElementById('store-info');
     const div = document.createElement('div');
 
-    // Apply the "righteous-font" class to the name element
+    
     const nameElement = document.createElement('p');
     nameElement.textContent = this.name;
-    nameElement.classList.add('righteous-font'); // Add the CSS class
+    nameElement.classList.add('righteous-font'); 
     div.appendChild(nameElement);
 
     const ul = document.createElement('ul');
@@ -52,7 +49,7 @@ class Location {
     container.appendChild(div);
   }
 }
-  
+
 
 const storeInfo = [
   new Location(

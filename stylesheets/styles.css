@@ -52,27 +52,29 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #000000;
+  color: #06030d;
   font-weight: normal;
-  padding: 10px 20px;
+  padding: 10px 15px;
   background-color: transparent;
   transition: background-color 0.35s, color 0.35s;
-  border: none; 
+  border: none;
 }
 
-nav ul li a:hover, nav ul li a:active {
-  background-color: #0071C5; 
-  color: white; 
+nav ul li a:hover,
+nav ul li a:active {
+  background-color: #3280b4;
+  color: white;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Rotating slide show*/
 
 .hero-container {
   position: relative;
   overflow: hidden;
   background: linear-gradient(to top, rgba(255, 255, 255, 0.414), #5fbaffd7, #37fef4, rgba(0, 0, 0, 0.517));
-  padding: 20px 0px; 
+  padding: 20px 0px;
 }
 
 
@@ -84,13 +86,12 @@ nav ul li a:hover, nav ul li a:active {
   height: 250px;
   margin-top: 40px;
   margin-bottom: 40px;
-  background: linear-gradient(to top, rgba(255, 255, 255, 0), #0071C5, #0097FF, rgba(0, 0, 0, 0));
 }
 
 .slideshow img {
   width: 375px;
   margin-right: 120px;
-  max-height: 100%; 
+  max-height: 100%;
 }
 
 
@@ -99,15 +100,19 @@ nav ul li a:hover, nav ul li a:active {
   0% {
     transform: translateX(0);
   }
+
   25% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(-100%);
   }
+
   75% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -115,10 +120,7 @@ nav ul li a:hover, nav ul li a:active {
 
 
 
-
-.lower-border {
-  border-bottom: 1px solid gray;
-}
+/* table styles */
 
 #store-info {
   list-style-type: none;
@@ -129,7 +131,6 @@ table {
   width: 100%;
   font-family: 'Arial', sans-serif;
   text-align: center;
-  border: 1px solid black;
 }
 
 /* Style for the table header (Locations, Hours, Hourly Totals) */
@@ -153,7 +154,7 @@ tfoot td {
   color: white;
 }
 
-/* Style for the first data cell (Locations) to be left-aligned */
+
 tbody td:first-child {
   text-align: left;
 }
@@ -167,8 +168,8 @@ tbody td:last-child {
 /* Style for the last data cell (Hourly Totals) */
 tfoot th {
   background-color: gray;
-  color: white;
   border: none;
+  color: white;
   padding: 10px;
 }
 
@@ -187,11 +188,75 @@ tfoot th {
 
 /* Footer styling */
 footer {
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.801);
   color: white;
   text-align: center;
-  padding: 10px;
-  margin-top: auto; 
+  padding: 15px;
+  margin-top: auto;
   width: 100%;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.832);
+}
+
+/* form styling */
+.input-group {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.input-row {
+  margin-bottom: 10px;
+}
+
+
+label {
+  padding: 5px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 30px 0px;
+}
+
+#location-form {
+  border: 2px solid #8fa6b6;
+  padding: 25px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+Legend {
+  font-family: 'Righteous', sans-serif;
+  font-size: 14px;
+  color: salmon;
+  position: absolute;
+  top: -20px;
+  left: 5px;
+}
+
+#add-location-button {
+  background-color: rgb(100, 98, 108);
+  color: white;
+  height: 30px;
+  width: 100px;
+  cursor: pointer;
+  transition: background-color 0.1s, color 0.1s;
+  font-family: sans-serif;
+}
+
+#add-location-button:hover,
+#add-location-button:active {
+  background-color: #3280b4;
+  color: white;
+}
+
+.table-container {
+  margin: 0px 60px 30px 60px;
 }

@@ -26,7 +26,7 @@ I've created a dynamic webpage for Pat's cookies. A large component of this assi
 
 
 ### Lighthouse Accessibility Report Score
-![Lighthouse](photos/lighthouse08.png)
+![Lighthouse](photos/lighthouse09.png)
 
 
 
@@ -45,7 +45,7 @@ I've created a dynamic webpage for Pat's cookies. A large component of this assi
     * Constructor Function - addLocation for the form to add a location to the table. 
 
 
-* Included </fieldset> and </legend> in my html form structure to improve accessibility. 
+* Included `</fieldset>` and `</legend>` in my html form structure to improve accessibility. (And legend in my css) 
 
 * Swapped out my onclick method for an event listener. 
 

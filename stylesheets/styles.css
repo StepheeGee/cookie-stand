@@ -52,9 +52,9 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #000000;
+  color: #06030d;
   font-weight: normal;
-  padding: 10px 20px;
+  padding: 10px 15px;
   background-color: transparent;
   transition: background-color 0.35s, color 0.35s;
   border: none;
@@ -188,29 +188,25 @@ tfoot th {
 
 /* Footer styling */
 footer {
-  background-color: gray;
+  background-color: rgba(128, 128, 128, 0.801);
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
   margin-top: auto;
   width: 100%;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.832);
 }
 
 /* form styling */
+.input-group {
+  display: inline-block;
+  margin-right: 10px;
+}
 
 .input-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   margin-bottom: 10px;
 }
 
-.input-group {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
 
 label {
   padding: 5px;
@@ -223,12 +219,12 @@ label {
   justify-content: center;
   align-items: center;
   height: 200px;
-  margin: 10px;
+  margin: 30px 0px;
 }
 
 #location-form {
   border: 2px solid #8fa6b6;
-  padding: 30px;
+  padding: 25px 20px;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -236,24 +232,22 @@ label {
   position: relative;
 }
 
-#location-form::before {
-  content: "Add a New Store to the Table!";
+Legend {
   font-family: 'Righteous', sans-serif;
   font-size: 14px;
   color: salmon;
   position: absolute;
-  top: -25px;
+  top: -20px;
   left: 5px;
 }
 
 #add-location-button {
-  background-color: rgb(80, 77, 91);
+  background-color: rgb(100, 98, 108);
   color: white;
   height: 30px;
   width: 100px;
-  margin-left: 7px;
   cursor: pointer;
-  transition: background-color 0.20s, color 0.20s;
+  transition: background-color 0.1s, color 0.1s;
   font-family: sans-serif;
 }
 

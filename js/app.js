@@ -109,17 +109,22 @@ for (let i = 0; i < shopLocations.length; i++) {
 // Create footer row
 createFooterRow();
 
+
+
 /* Theeee Form */
 
 // Event listener for the "Add Location" button
 document.addEventListener("DOMContentLoaded", function () {
-  // Add the event listener for the "Add Location" button
+  
   const addButton = document.getElementById("add-location-button");
   addButton.addEventListener("click", addLocation);
 });
 
 
-function addLocation() {
+// Modify the addLocation function to prevent form submission
+function addLocation(event) {
+  event.preventDefault(); // Prevent form submission
+
   const name = document.getElementById("name").value;
   const minCustomers = parseFloat(document.getElementById("min-customers").value);
   const maxCustomers = parseFloat(document.getElementById("max-customers").value);
@@ -134,7 +139,10 @@ function addLocation() {
   document.getElementById("min-customers").value = "";
   document.getElementById("max-customers").value = "";
   document.getElementById("avg-cookies").value = "";
+
+
 }
+
 
 
 

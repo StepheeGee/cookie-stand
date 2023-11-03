@@ -1,10 +1,10 @@
-# LAB - Class-08b
+# LAB - Class-09
 
-11.1.23
+11.2.23
 
 ## Salmon Cookies
 
-I've created a dynamic webpage for Pat's cookies. A large component of this assignment required me to write JS code to establish a class to model store locations, generates sales data for each location, dynamically builds an HTML table with the specified header and footer, and populates the table with the sales data rows for each store. And now it features a revolving photo carousel.
+I've created a dynamic webpage for Pat's cookies. A large component of this assignment required me to write JS code to establish a class to model store locations, generates sales data for each location, dynamically builds an HTML table with the specified header and footer, and populates the table with the sales data rows for each store. And now it features a revolving photo carousel. And I recently added a form that accepts location properties as input. 
 
 ### Author: Stephanie G Johnson
 

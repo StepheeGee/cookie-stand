@@ -28,11 +28,11 @@ class Location {  //used class based approach instead of prototyping
   render() {
     const salesTable = document.getElementById('sales-table');
 
-    // Create a new row for this location
+    
     const row = document.createElement('tr');
     row.innerHTML = `<td>${this.name}</td>`;
 
-    // Calculate and render sales data for each hour
+    
     for (let i = 0; i < this.cookiesSoldPerHour.length; i++) {
       const data = this.cookiesSoldPerHour[i];
       row.innerHTML += `<td>${data.cookiesSold}</td>`;
@@ -106,7 +106,7 @@ for (let i = 0; i < shopLocations.length; i++) {
   location.render();
 }
 
-// Create footer row
+
 createFooterRow();
 
 
@@ -121,9 +121,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Modify the addLocation function to prevent form submission
+
 function addLocation(event) {
-  event.preventDefault(); // Prevent form submission
+  event.preventDefault(); 
 
   const name = document.getElementById("name").value;
   const minCustomers = parseFloat(document.getElementById("min-customers").value);
@@ -134,12 +134,11 @@ function addLocation(event) {
   newLocation.calculateSales();
   newLocation.render();
 
-  // Clear form fields after adding the location
+  
   document.getElementById("name").value = "";
   document.getElementById("min-customers").value = "";
   document.getElementById("max-customers").value = "";
   document.getElementById("avg-cookies").value = "";
-
 
 }
 

@@ -10,6 +10,10 @@ I've created a dynamic webpage for Pat's cookies. A large component of this assi
 
 ### Links and Resources
 
+[Event Listeners](https://www.w3schools.com/js/js_htmldom_eventlistener.asp)
+
+[DOMContentLoaded event](https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event)
+
 [SOLID](https://www.geeksforgeeks.org/single-responsibility-in-solid-design-principle/)
 
 [Working with Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_objects)
@@ -43,6 +47,6 @@ I've created a dynamic webpage for Pat's cookies. A large component of this assi
 
 * Included </fieldset> and </legend> in my html form structure to improve accessibility. 
 
-
+* Swapped out my onclick method for an event listener. 
 
 

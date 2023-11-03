@@ -246,19 +246,19 @@ label {
   left: 5px;
 }
 
-button {
+#add-location-button {
   background-color: rgb(80, 77, 91);
   color: white;
   height: 30px;
   width: 100px;
   margin-left: 7px;
   cursor: pointer;
-  transition: background-color 0.35s, color 0.35s;
+  transition: background-color 0.20s, color 0.20s;
   font-family: sans-serif;
 }
 
-button:hover,
-button:active {
+#add-location-button:hover,
+#add-location-button:active {
   background-color: #3280b4;
   color: white;
 }

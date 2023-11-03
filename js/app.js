@@ -111,6 +111,14 @@ createFooterRow();
 
 /* Theeee Form */
 
+// Event listener for the "Add Location" button
+document.addEventListener("DOMContentLoaded", function () {
+  // Add the event listener for the "Add Location" button
+  const addButton = document.getElementById("add-location-button");
+  addButton.addEventListener("click", addLocation);
+});
+
+
 function addLocation() {
   const name = document.getElementById("name").value;
   const minCustomers = parseFloat(document.getElementById("min-customers").value);
@@ -128,82 +136,5 @@ function addLocation() {
   document.getElementById("avg-cookies").value = "";
 }
 
-
-
-
-
-/* Lab 06 improvement
-class Location { // Used a class (blueprint) instead of a function because it automatically creates a function constructor
-  constructor(name, minCustomers, maxCustomers, avgCookiesPerCustomer, hours) { // Initialized properties based on these parameters
-    this.name = name;
-    this.minCustomers = minCustomers;
-    this.maxCustomers = maxCustomers;
-    this.avgCookiesPerCustomer = avgCookiesPerCustomer;
-    this.hours = hours; // Hours is now a shared array
-    this.cookiesSoldPerHour = [];
-    this.totalCookies = 0;
-  } // 'this' is a keyword that refers to the current instance of the class
-
-  // randomCustomers is a method of the Location class in the form of a function
-  randomCustomers() {
-    return Math.floor(Math.random() * (this.maxCustomers - this.minCustomers + 1)) + this.minCustomers;
-  }
-
-  // calculateSales is another method of the Location class
-  calculateSales() {
-    for (let i = 0; i < this.hours.length; i++) {
-      const hour = this.hours[i];
-      const customers = this.randomCustomers();
-      const cookies = Math.ceil(customers * this.avgCookiesPerCustomer);
-      this.totalCookies += cookies;
-      this.cookiesSoldPerHour.push({ hour, cookiesSold: cookies });
-    }
-  }
-
-  // First calculate (above), then render the sales data for the Location class
-  renderSales() {
-    const ulElement = document.getElementById(`${this.name.toLowerCase()}-sales`);
-    ulElement.innerHTML = ''; // Get - retrieves the element by ID and then clears its contents
-
-    for (let i = 0; i < this.cookiesSoldPerHour.length; i++) {
-      const data = this.cookiesSoldPerHour[i];
-      const li = document.createElement('li');
-      li.textContent = `${data.hour}: ${data.cookiesSold} cookies`;
-      ulElement.appendChild(li); // For each hour's data, it creates a list item (<li>) in the HTML and appends it to the unordered list (<ul>) element
-    }
-
-    const totalLi = document.createElement('li');
-    totalLi.textContent = `Total: ${this.totalCookies} cookies`;
-    ulElement.appendChild(totalLi); // Creates a list item for the total cookies sold and appends it to the unordered list
-  }
-}
-
-const storeHours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
-
-const shopLocations = [
-  new Location('Seattle', 23, 65, 6.3, storeHours),
-  new Location('Tokyo', 3, 24, 1.2, storeHours),
-  new Location('Dubai', 11, 38, 3.7, storeHours),
-  new Location('Paris', 20, 38, 2.3, storeHours),
-  new Location('Lima', 2, 16, 4.6, storeHours),
-];
-
-for (let i = 0; i < shopLocations.length; i++) {
-  const location = shopLocations[i];
-  location.calculateSales();
-  location.renderSales();
-}
-
-*/
-/* Change elements in the document using objects and properties in js
-
-DOM combines js and html and gives js control of the webpage
-The html element is converted to a js object
-document.title - changes the title of the page
-document.body - gets the body html element and puts it in the js code
-document.body.innerHTML - controls all the html inside the body
-
-method = functions that are saved inside an object
-document.querySelector() lets us get any element from the page an put it inside your js
 
 

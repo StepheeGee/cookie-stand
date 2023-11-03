@@ -57,12 +57,13 @@ nav ul li a {
   padding: 10px 20px;
   background-color: transparent;
   transition: background-color 0.35s, color 0.35s;
-  border: none; 
+  border: none;
 }
 
-nav ul li a:hover, nav ul li a:active {
-  background-color: #3280b4; 
-  color: white; 
+nav ul li a:hover,
+nav ul li a:active {
+  background-color: #3280b4;
+  color: white;
   cursor: pointer;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
@@ -73,7 +74,7 @@ nav ul li a:hover, nav ul li a:active {
   position: relative;
   overflow: hidden;
   background: linear-gradient(to top, rgba(255, 255, 255, 0.414), #5fbaffd7, #37fef4, rgba(0, 0, 0, 0.517));
-  padding: 20px 0px; 
+  padding: 20px 0px;
 }
 
 
@@ -90,7 +91,7 @@ nav ul li a:hover, nav ul li a:active {
 .slideshow img {
   width: 375px;
   margin-right: 120px;
-  max-height: 100%; 
+  max-height: 100%;
 }
 
 
@@ -99,15 +100,19 @@ nav ul li a:hover, nav ul li a:active {
   0% {
     transform: translateX(0);
   }
+
   25% {
     transform: translateX(0);
   }
+
   50% {
     transform: translateX(-100%);
   }
+
   75% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -115,10 +120,7 @@ nav ul li a:hover, nav ul li a:active {
 
 
 
-
-.lower-border {
-  border-bottom: 1px solid gray;
-}
+/* table styles */
 
 #store-info {
   list-style-type: none;
@@ -152,7 +154,7 @@ tfoot td {
   color: white;
 }
 
-/* Style for the first data cell (Locations) to be left-aligned */
+
 tbody td:first-child {
   text-align: left;
 }
@@ -190,13 +192,12 @@ footer {
   color: white;
   text-align: center;
   padding: 10px;
-  margin-top: auto; 
+  margin-top: auto;
   width: 100%;
   box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* form styling */
-
 
 .input-row {
   display: flex;
@@ -208,13 +209,13 @@ footer {
 .input-group {
   display: flex;
   flex-direction: row;
-  align-items: center; 
+  align-items: center;
 }
 
 label {
   padding: 5px;
   font-size: 12px;
-  text-align: left; 
+  text-align: left;
 }
 
 .form-container {
@@ -222,7 +223,7 @@ label {
   justify-content: center;
   align-items: center;
   height: 200px;
-  margin: 10px; 
+  margin: 10px;
 }
 
 #location-form {
@@ -230,8 +231,8 @@ label {
   padding: 30px;
   text-align: center;
   display: flex;
-  flex-direction: row; 
-  align-items: center; 
+  flex-direction: row;
+  align-items: center;
   position: relative;
 }
 
@@ -241,8 +242,8 @@ label {
   font-size: 14px;
   color: salmon;
   position: absolute;
-  top: -25px; 
-  left: 5px; 
+  top: -25px;
+  left: 5px;
 }
 
 button {
@@ -256,11 +257,12 @@ button {
   font-family: sans-serif;
 }
 
-button:hover, button:active {
+button:hover,
+button:active {
   background-color: #3280b4;
   color: white;
 }
 
 .table-container {
-  margin: 0px 60px 30px 60px; 
+  margin: 0px 60px 30px 60px;
 }

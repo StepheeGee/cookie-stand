@@ -136,7 +136,7 @@ table {
   text-align: center;
 }
 
-/* Style for the table header (Locations, Hours, Hourly Totals) */
+
 thead th {
   background-color: gray;
   color: white;
@@ -144,7 +144,7 @@ thead th {
   padding: 10px;
 }
 
-/* Style for table data cells (sales data) */
+
 tbody td {
   background-color: salmon;
   border: 1px solid black;
@@ -168,7 +168,7 @@ tbody td:last-child {
   border: none;
 }
 
-/* Style for the last data cell (Hourly Totals) */
+
 tfoot th {
   background-color: gray;
   border: none;
@@ -242,7 +242,6 @@ label {
 
 #location-form {
   border: 5px solid #8fa6b6;
-  box-sizing: border-box;
   box-shadow: 3px 2px 2px black;
   padding: 25px 20px;
   text-align: center;

@@ -113,7 +113,7 @@ thead th {
 }
 
 tbody td {
-  background-color: salmon;
+  background-color: rgba(250, 128, 114, 0.788);
   border: 1px solid black;
   padding: 10px;
 }

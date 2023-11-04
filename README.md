@@ -1,6 +1,6 @@
-# LAB - Class-09
+# LAB - Class-10a
 
-11.2.23
+11.3.23
 
 ## Salmon Cookies
 
@@ -26,27 +26,20 @@ I've created a dynamic webpage for Pat's cookies. A large component of this assi
 
 
 ### Lighthouse Accessibility Report Score
-![Lighthouse](photos/lighthouse09.png)
+![Lighthouse](photos/lighthouse10.png)
 
 
 
 ### Comments
 
-* Created an HTML form to accept the information for a new cookie stand location. Used event handler to append the input information to the table.
+* Added three fonts for the majority of the page
 
-* My constructor function was Location with properties that I included in the form. And I made the function of the form - addLocation. 
+* Added borders to elements
 
-* I checked to make sure that made code was following the SRR. I think so. I have the following functions: 
-    * Location Constructor - to complete sales calculations
-    * Location Constructor - to append store info to homepage.(That was a total disaster, in hindsight. I had to create two separate JS files, one fore the homepage and one for the sales data page. I thought that was a good idea until I went back to consolidate the files, and realized it was almost impossible because I gave two different constructors the same name. So I won't do that again.)
-    * Table Functions - One for the Header Row and one for the Footer Row
-    * Used the Footer Row function to evaluate the grand total for the table. 
-    * Function for my Rotating Images. (Another disaster. But at least this one was fun.)
-    * Constructor Function - addLocation for the form to add a location to the table. 
+* Changed background color
 
+* Confirmed functionality
 
-* Included `</fieldset>` and `</legend>` in my html form structure to improve accessibility. (And legend in my css) 
-
-* Swapped out my onclick method for an event listener. 
+* Added text to the homepage
 
 

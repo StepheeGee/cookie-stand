@@ -8,24 +8,20 @@
 
 
 
-.location-title{
+.location-title {
   font-family: righteous;
-  margin: 0 auto;
   font-size: 45px;
   color: rgb(74, 74, 74);
   text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.3);
   position: relative;
   top: 15px;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  
-}
+
+
 
 
 /* Background Colors */
@@ -203,15 +199,22 @@ tfoot th {
 }
 
 /* Footer styling */
+
 footer {
-  background-color: rgb(76, 76, 81);
-  color: rgb(153, 149, 149);
-  text-align: center;
+  background: linear-gradient(to top, #fff, #ccc);
+  color: rgb(28, 28, 30);
+  text-align: left;
   padding: 15px;
   margin-top: auto;
   width: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.858);
+  font-family: kay pho du;
 }
+
+  
+
+
+  
+
 
 /* form styling */
 .input-group {

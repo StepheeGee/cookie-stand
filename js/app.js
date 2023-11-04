@@ -28,11 +28,11 @@ class Location {  //used class based approach instead of prototyping
   render() {
     const salesTable = document.getElementById('sales-table');
 
-    
+
     const row = document.createElement('tr');
     row.innerHTML = `<td>${this.name}</td>`;
 
-    
+
     for (let i = 0; i < this.cookiesSoldPerHour.length; i++) {
       const data = this.cookiesSoldPerHour[i];
       row.innerHTML += `<td>${data.cookiesSold}</td>`;
@@ -115,7 +115,7 @@ createFooterRow();
 
 // Event listener for the "Add Location" button
 document.addEventListener("DOMContentLoaded", function () {
-  
+
   const addButton = document.getElementById("add-location-button");
   addButton.addEventListener("click", addLocation);
 });
@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 function addLocation(event) {
-  event.preventDefault(); 
+  event.preventDefault();
 
   const name = document.getElementById("name").value;
   const minCustomers = parseFloat(document.getElementById("min-customers").value);
@@ -134,7 +134,7 @@ function addLocation(event) {
   newLocation.calculateSales();
   newLocation.render();
 
-  
+
   document.getElementById("name").value = "";
   document.getElementById("min-customers").value = "";
   document.getElementById("max-customers").value = "";
